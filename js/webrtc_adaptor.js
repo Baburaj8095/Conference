@@ -28,7 +28,7 @@
 		 this.soundOriginGainNode = null;
 		 this.secondStreamGainNode = null;
 		 this.localStream = null;
-		 this.bandwidth = 500; //default bandwidth kbps
+		 this.bandwidth = 200; //default bandwidth kbps
 		 this.isMultiPeer = false; //used for multiple peer client
 		 this.multiPeerStreamId = null;   //used for multiple peer client
 		 this.isWebSocketTriggered = false;
@@ -1416,7 +1416,7 @@
 				 delete parameters.encodings[0].maxBitrate;
 			 }
 			 else {
-				 parameters.encodings[0].maxBitrate = bandwidth * 1000;
+				 parameters.encodings[0].maxBitrate = bandwidth * 400;
 			 }
  
 			 return videoSender.setParameters(parameters)
