@@ -1947,20 +1947,7 @@ video : true};
 							console.log("joined the room: "
 									+ roomOfStream[obj.streamId]);
 	
-	
-							if (!executed1)
-							{
-							update_strem1(obj.streamId,localStorage.getItem("id"))
-							playVideo_2(obj.streamId);
-							localStorage.setItem("strm_iod",obj.streamId
-							);
-							document.getElementById("localVideo").style.border = "2px solid skyblue";
-	
-							executed1 = true;
-	
-	
-							}
-	
+
 							publishStreamId = obj.streamId
 							$("#overlay").fadeOut(300);
 							if(playOnly) {
